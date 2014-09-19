@@ -6,6 +6,7 @@ Course project for "Getting and Cleaning Data" on Coursera, September 2014.
 
 The run_analysis.R script accomplishes the goals set forward in the course project description.
 Specifically, the script:
+
 1. Loads and combines the data sets
 2. Extracts measurements on the mean and standard deviation for each measurement.
 3. Adds descriptive activity names to the data set.
@@ -14,7 +15,6 @@ Specifically, the script:
 
 Comments throughout the script indicate which goal is accomplished by each snippet of code. The
 exception is Part 4, which is accomplished at several stages throughout the script.
-
 
 The script begins by loading the "dplyr" package.
 
@@ -31,6 +31,7 @@ renames the variables in the newly combined data.frame. The last line of code fr
 combines the test and train data sets into a single data set, called "Data".
 
 Part 2 of the script extracts measurements on the mean and standard deviation for each measurement.
+
 1. A select() function is used to select all variables containing the phrase "mean()", which are stored
 to "meanVariables".
 2. A select() function is used to select all variables containing the phrase "std()", which are stored
